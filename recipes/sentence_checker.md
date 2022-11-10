@@ -11,7 +11,6 @@ ends with (. ? !)
 
 3. Create example tests
 [".", "!", "?"] =  if text[-1] in array
-def capitalized?(string)
 text.starts_with?(/[A-Z]/)
 end
 
