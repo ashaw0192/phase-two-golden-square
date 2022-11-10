@@ -8,3 +8,21 @@ RSpec.describe "say_hello method" do
         end
     end
 end
+
+RSpec.describe "encode method" do
+    context "when handed the string theswiftfoxjumpedoverthelazydog with the key secretkey" do
+        it "returns EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL" do
+            result = encode("theswiftfoxjumpedoverthelazydog", "secretkey")
+            expect(result).to eq "EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL"
+        end
+    end
+end
+
+RSpec.describe "decode method" do
+    context "when handed the string EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL with the key secretkey" do
+        it "returns theswiftfoxjumpedoverthelazydog" do
+            result = decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
+            expect(result).to eq "theswiftfoxjumpedoverthelazydog"
+        end
+    end
+end
