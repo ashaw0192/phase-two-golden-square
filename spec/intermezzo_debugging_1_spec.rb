@@ -26,3 +26,12 @@ RSpec.describe "decode method" do
         end
     end
 end
+
+RSpec.describe "get_most_common_letter method" do
+    context "when handed ther string tattle" do
+        it "returns t" do
+            result = get_most_common_letter("tattle")
+            expect(result).to eq "t"
+        end
+    end
+end
