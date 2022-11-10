@@ -45,18 +45,10 @@ sentence_checker("Hello, i hope you are well!")
 # => true
 
 * 6
-sentence_checker("hello?")
-# => false
-
-* 7
-sentence_checker("hello!")
-# => false
-
-* 8
 sentence_checker("Hello,")
 # => false
 
-* 9
+* 7
 sentence_checker("HHHHHHHHHH!!!!!!!!!!")
 # => true
 
