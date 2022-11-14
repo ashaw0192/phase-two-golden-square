@@ -22,7 +22,7 @@ class DiaryEntry
         fail "Error" if wpm < 1
         (count_words/wpm.to_f).ceil
     end
-  
+
     def reading_chunk(wpm, minutes) 
         reading_speed = wpm * minutes
         chunk = words[@progress...reading_speed + @progress]
