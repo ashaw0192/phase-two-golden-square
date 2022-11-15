@@ -6,7 +6,8 @@ class TodoList
 
   def add(todo) 
     @todo = todo
-    @incomplete << todo
+    @incomplete.each { |task_check| raise("error") if task_check.task == @todo.task }
+    @incomplete << @todo
   end
 
   def incomplete

@@ -10,7 +10,6 @@ class Todo
   end
 
   def mark_done!
-    #!@task.include?("***COMPLETE***") ? @task << " ***COMPLETE***" : raise("Task already marked done.")
     @hash[@task] == (:complete) ? raise("Task already marked done.") : (@hash[@task] = :complete)
   end
 
